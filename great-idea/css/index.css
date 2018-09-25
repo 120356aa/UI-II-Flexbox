@@ -37,49 +37,22 @@
     text-align: center;
   }
 
-    .banner_img img {
-      width: 310px;
-    }
+    .banner_img img {width: 310px;}
 
 /* ----------- */
 /* SECTION ONE */
 /*------------ */
-.section1{
+.section{
   display: flex;
+  justify-content: space-between;
 }
 
-  .features {
+  .s1 {
     width: 48%;
     padding: 40px 0px;
   }
 
-  .about {
-    width: 48%;
+  .s2 {
+    width: 30%;
     padding: 40px 0px;
-    right: 0px;
-    position: absolute;
-  }
-
-/* ----------- */
-/* SECTION TWO */
-/*------------ */
-.section2{
-  display: flex;
-}
-
-  .services {
-    width: 33%;
-    padding: 40px 0px;
-    padding-right: 15px;
-  }
-
-  .product {
-    width: 33%;
-    padding: 40px 0px;
-  }
-
-  .vision {
-    width: 33%;
-    padding: 40px 0px;
-    padding-left: 15px;
   }
