@@ -1,66 +1,85 @@
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
-*/
-
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
-}
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
-}
-body {
-	line-height: 1;
-}
-ol, ul {
-	list-style: none;
-}
-blockquote, q {
-	quotes: none;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
-}
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
+/* ------ */
+/* BANNER */
+/*------- */
+.banner {
+  border-bottom: 1px solid black;
+  display: flex;
 }
 
-/* Set every element's box-sizing to border-box */
-* {
-    box-sizing: border-box;
+  .banner_text {
+    width: 49%;
+    text-align: center;
+    vertical-align: top;
+    margin-top: 95px;
+  }
+
+    .banner_text h1 {
+      font-size: 65px;
+      line-height: 50px;
+    }
+
+    .banner_text a {
+      border: 1px solid grey;
+      padding: 5px 30px;
+      text-decoration: none;
+      color: grey;
+      transition: 0.3s;
+    }
+
+    .banner_text a:hover {
+      background-color: grey;
+      color: white;
+    }
+
+  .banner_img {
+    padding: 50px 0;
+    width: 50%;
+    text-align: center;
+  }
+
+    .banner_img img {
+      width: 310px;
+    }
+
+/* ----------- */
+/* SECTION ONE */
+/*------------ */
+.section1{
+  display: flex;
 }
 
-html, body {
-    height: 100%;
-    font-family: 'Titillium Web', sans-serif;
+  .features {
+    width: 48%;
+    padding: 40px 0px;
+  }
+
+  .about {
+    width: 48%;
+    padding: 40px 0px;
+    right: 0px;
+    position: absolute;
+  }
+
+/* ----------- */
+/* SECTION TWO */
+/*------------ */
+.section2{
+  display: flex;
 }
 
-h1, h2, h3, h4, h5 {
-    font-family: 'Bangers', cursive;
-    letter-spacing: 1px;
-    margin-bottom: 15px;
-}
+  .services {
+    width: 33%;
+    padding: 40px 0px;
+    padding-right: 15px;
+  }
 
-/* Copy and paste your work from yesterday here and start to refactor into flexbox */
+  .product {
+    width: 33%;
+    padding: 40px 0px;
+  }
+
+  .vision {
+    width: 33%;
+    padding: 40px 0px;
+    padding-left: 15px;
+  }
